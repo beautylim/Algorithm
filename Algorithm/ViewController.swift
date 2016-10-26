@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum ArrayEvent:Int{
+    case Bubble
+    case Revert
+
+}
+
 class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var number1: UITextField!
@@ -91,6 +97,15 @@ class ViewController: UIViewController,UITextFieldDelegate {
         view.endEditing(true)
     }
     @IBAction func bubbleClick(_ sender: AnyObject) {
+       arrayAction(event: ArrayEvent.Bubble)
+    
+    }
+    
+    @IBAction func revert(_ sender: AnyObject) {
+       arrayAction(event: ArrayEvent.Revert)
+    }
+    
+    func getArray()->[Int]{
         var targetArray = [Int]()
         targetArray.append(Int(number1.text!)!)
         targetArray.append(Int(number2.text!)!)
@@ -98,18 +113,26 @@ class ViewController: UIViewController,UITextFieldDelegate {
         targetArray.append(Int(number4.text!)!)
         targetArray.append(Int(number5.text!)!)
         targetArray.append(Int(number6.text!)!)
-        
-        //主要操作
-        let resultArray = targetArray.Bubble().map({ (element) -> String in
-            return "\(element)❤️"
-        })
-        let resultString = resultArray.reduce("") { (result, element) -> String in
-           return element + result
-        }
-        self.resultLabel.text = resultString
-    
+        return targetArray
     }
     
+    func arrayAction(event:ArrayEvent){
+        let targetArray = getArray()
+        var eventArray = [Int]()
+        switch event {
+        case .Bubble:
+            eventArray = targetArray.Bubble()
+        case .Revert:
+            eventArray = targetArray.revert()
+        }
+        let resultArray = eventArray.map { (element) -> String in
+            return "\(element)❤️"
+        }
+        let resultString = resultArray.reduce("") { (result, element) -> String in
+            return  result + element
+        }
+        self.resultLabel.text = resultString
+    }
     
     @IBAction func returnAgain(_ sender: AnyObject) {
         bubbleBtn.isEnabled = false

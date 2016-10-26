@@ -95,6 +95,17 @@
                                     <action selector="returnAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ai-mz-lha"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBP-Qj-5am">
+                                <frame key="frameInset" minX="125" minY="113" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2611594189" green="0.5112428617" blue="0.3307674364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="反转">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="revert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cId-xc-e26"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

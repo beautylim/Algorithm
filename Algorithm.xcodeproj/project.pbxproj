@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA41E6E31DC091D9004F126B /* ALRevert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41E6E21DC091D9004F126B /* ALRevert.swift */; };
 		EA9D12F31DC04D90005E11F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D12F21DC04D90005E11F8 /* AppDelegate.swift */; };
 		EA9D12F51DC04D90005E11F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D12F41DC04D90005E11F8 /* ViewController.swift */; };
 		EA9D12F81DC04D90005E11F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9D12F61DC04D90005E11F8 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA41E6E21DC091D9004F126B /* ALRevert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALRevert.swift; sourceTree = "<group>"; };
 		EA9D12EF1DC04D90005E11F8 /* Algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9D12F21DC04D90005E11F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA9D12F41DC04D90005E11F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA41E6E11DC091C5004F126B /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				EA41E6E21DC091D9004F126B /* ALRevert.swift */,
+			);
+			name = Convert;
+			sourceTree = "<group>";
+		};
 		EA9D12E61DC04D8D005E11F8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		EA9D12F11DC04D90005E11F8 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				EA41E6E11DC091C5004F126B /* Convert */,
 				EA9D13041DC04D99005E11F8 /* Bubble */,
 				EA9D12F21DC04D90005E11F8 /* AppDelegate.swift */,
 				EA9D12F41DC04D90005E11F8 /* ViewController.swift */,
@@ -148,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA41E6E31DC091D9004F126B /* ALRevert.swift in Sources */,
 				EA9D13061DC04DB4005E11F8 /* ALBubble.swift in Sources */,
 				EA9D12F51DC04D90005E11F8 /* ViewController.swift in Sources */,
 				EA9D12F31DC04D90005E11F8 /* AppDelegate.swift in Sources */,
@@ -314,6 +326,7 @@
 				EA9D13031DC04D90005E11F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
