@@ -5,7 +5,7 @@ import UIKit
 var str = "Hello, playground"
 
 var testArray = [61,12,78,24,33,69,30,47,56]
-func bubble_sort(array:[Int])->[Int]{
+func bubbleSort(array:[Int])->[Int]{
     var myArray = array
     let n = myArray.count
     for _ in 0..<n-1 {
@@ -20,5 +20,5 @@ func bubble_sort(array:[Int])->[Int]{
 }
 
 var date1 = NSDate.init();
-bubble_sort(array: testArray)
+bubbleSort(array: testArray)
 print("冒泡排序：",-date1.timeIntervalSinceNow)

@@ -6,7 +6,7 @@ var str = "Hello, playground"
 
 var testArray = [61,12,78,24,33,69,30,47,56]
 
-func select_sort(array:[Int])->[Int]{
+func selectSort(array:[Int])->[Int]{
     var myArray = array
     let n = myArray.count
     for i in 0..<n-1{
@@ -20,5 +20,5 @@ func select_sort(array:[Int])->[Int]{
 }
 
 var date1 = NSDate.init()
-select_sort(array: testArray)
+selectSort(array: testArray)
 print("选择排序：",-date1.timeIntervalSinceNow)
